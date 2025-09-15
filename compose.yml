@@ -2,13 +2,13 @@
 version: "3"
 services:
  devopsdb:
-   image: dbimage
+   image: nihanth19/webapp/dbimage
    ports:
      - "3306:3306"
    replicas: 2
 
  application:
-   image: appimage
+   image: nihanth19/webapp/appimage
    ports:
      - "1234:8080"
    replicas: 2
