@@ -3,13 +3,13 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: dbimage
+   image: sai102619/flm66-oct:dbimage
    ports:
      - "3306:3306"
 
  application:
    container_name: appcontainer
-   image: appimage
+   image: sai102619/flm66-oct:javaimg
    ports:
      - "1234:8080"
    depends_on:
